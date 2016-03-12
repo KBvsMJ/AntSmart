@@ -1,0 +1,7 @@
+pod "JVFloatingDrawer"
+pod 'BFPaperButton','~> 2.0.16'
+pod 'AFNetworking','~> 2.0'
+pod 'SDWebImage', '~>3.7'
+pod 'STAlertView'
+pod 'FMDB'
+pod 'iToast', '~> 0.0.1'

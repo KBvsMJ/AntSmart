@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "84891364-dd5d-8043-99ab-fb2db52c2985++4800",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "84891364-dd5d-8043-99ab-fb2db52c2985++4800" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "84891364-dd5d-8043-99ab-fb2db52c2985++4800" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3BEB2C7-92DB-42A2-AE61-4E6D798E47CB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "84891364-dd5d-8043-99ab-fb2db52c2985++4800" : "AntBrain"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SmartHome",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SmartHome\/Class\/SmartHome.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.0.134\/svn\/SmartHome",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "84891364-dd5d-8043-99ab-fb2db52c2985++4800"
+    }
+  ]
+}

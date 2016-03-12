@@ -1,0 +1,48 @@
+
+/* Class = "UINavigationItem"; title = "Drawer Settings"; ObjectID = "Ajm-nZ-Rmq"; */
+"Ajm-nZ-Rmq.title" = "Drawer Settings";
+
+/* Class = "UINavigationController"; title = "Login"; ObjectID = "CHu-B7-yLS"; */
+"CHu-B7-yLS.title" = "Login";
+
+/* Class = "UILabel"; text = "80"; ObjectID = "EOR-vK-6Mu"; */
+"EOR-vK-6Mu.text" = "80";
+
+/* Class = "UIButton"; normalTitle = "VIEW GUIDE"; ObjectID = "Iuj-Uy-Smb"; */
+"Iuj-Uy-Smb.normalTitle" = "VIEW GUIDE";
+
+/* Class = "UINavigationController"; title = "Router Manager"; ObjectID = "Ovk-PC-TNQ"; */
+"Ovk-PC-TNQ.title" = "Router Manager";
+
+/* Class = "UILabel"; text = "35"; ObjectID = "RRp-qp-lRt"; */
+"RRp-qp-lRt.text" = "35";
+
+/* Class = "UITextField"; placeholder = "Please enter your password "; ObjectID = "RyH-yO-o4B"; */
+"RyH-yO-o4B.placeholder" = "Please enter your password ";
+
+/* Class = "UITextField"; placeholder = "Please enter E-mail"; ObjectID = "dVO-Vb-4eV"; */
+"dVO-Vb-4eV.placeholder" = "Please enter E-mail";
+
+/* Class = "UILabel"; text = "You can log in by Associated Account"; ObjectID = "if9-Fw-FSc"; */
+"if9-Fw-FSc.text" = "You can log in by Associated Account";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "j30-7L-kcE"; */
+"j30-7L-kcE.normalTitle" = "Log in";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jPD-fy-U7L"; */
+"jPD-fy-U7L.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Forgot password"; ObjectID = "k7c-IR-hhc"; */
+"k7c-IR-hhc.normalTitle" = "Forgot password";
+
+/* Class = "UILabel"; text = "15"; ObjectID = "mfZ-kz-iHQ"; */
+"mfZ-kz-iHQ.text" = "15";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "vNM-4j-cp1"; */
+"vNM-4j-cp1.normalTitle" = "Register";
+
+/* Class = "UINavigationItem"; title = "GitHub Project Page"; ObjectID = "vZ9-nj-igO"; */
+"vZ9-nj-igO.title" = "GitHub Project Page";
+
+/* Class = "UINavigationItem"; title = "Router Manager"; ObjectID = "wue-ym-pXv"; */
+"wue-ym-pXv.title" = "Router Manager";

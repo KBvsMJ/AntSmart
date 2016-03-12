@@ -1,0 +1,194 @@
+//
+//  SmartHomeHeader.pch
+//  SmartHome
+//
+//  Created by iroboteer on 15/3/14.
+//  Copyright (c) 2015年 antbang. All rights reserved.
+//
+
+#ifndef SmartHome_SmartHomeHeader_pch
+#define SmartHome_SmartHomeHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+//如果需要打印则打开下面连个宏定义
+#define DEBUG_DATA 1
+//#define DEBUG_NET 1
+#define DEBUG_TEMP 1
+
+/*使用Dlog在完成nslog功能的同时还可以打印函数名以及行数*/
+#ifdef DEBUG_DATA
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+#ifdef DEBUG_NET
+#define DNetLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DNetLog(...)
+#endif
+
+#ifdef DEBUG_TEMP
+#define DTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DTLog(...)
+#endif
+
+//即为APPID
+#define APPID @"910775669"
+
+//判断语言
+#define  LOCAL_LANGUAGE @"language"
+
+//改变视图布局
+#define NOTI_CHANGE_LAYOUT @"NOTI_CHANGE_LAYOUT"
+//改变控件的显示与否
+#define NOTI_CHANGE_SHOW @"NOTI_CHANGE_SHOW"
+/*屏幕的宽度和高度*/
+#define SCREEN_CGSIZE_WIDTH [[UIScreen mainScreen]bounds].size.width
+#define SCREEN_CGSIZE_HEIGHT [[UIScreen mainScreen]bounds].size.height
+
+//防蹭网
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
+#pragma mark - 设备型号识别
+#define is_IOS_7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+
+//屏幕宽和高
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+
+
+
+//所有的URL部分---------------------------------------------------------
+//网络请求路径中的域名部分
+#define URL_DOMAIN @"http://bbs.antbang.com"
+//请求路由器的域名
+#define URL_ROUTER_DOMAIN @"URL_ROUTER_DOMAIN"
+//登陆路由器的地址
+#define URL_LOGIN_ROUTER @"URL_LOGIN_ROUTER"
+//流量统计页面
+#define URL_GET_NET_SPEED @"URL_GET_NET_SPEED"
+//显示当前dhcp列表
+#define URL_DHCP_LIST @"URL_DHCP_LIST"
+//显示系统的基本信息
+#define URL_ROUTER_BASEINFO @"URL_ROUTER_BASEINFO"
+//扫描wifi列表
+#define URL_WDSSCAN_WIFILIST @"URL_WDSSCAN_WIFILIST"
+//通过mac地址禁用设备上网
+#define URL_DISABLE_DEVICE @"URL_DISABLE_DEVICE"
+//修改无线密码
+#define URL_MODIFY_WIFI_PASSWORD @"URL_MODIFY_WIFI_PASSWORD"
+//修改无线名称
+#define URL_MODIFY_WIFI_NAME @"URL_MODIFY_WIFI_NAME"
+//获取无线基本设置
+#define URL_GET_WIFI_BASE_SETUP_INFO @"URL_GET_WIFI_BASE_SETUP_INFO"
+//设置无线中继
+#define URL_WIRELESS_EXTRA @"URL_WIRELESS_EXTRA"
+//上网设置
+#define URL_ADVSET_WAN @"URL_ADVSET_WAN"
+//所有的URL部分结束----------------------------------------------------------------------
+
+
+
+
+
+
+//所有的通知部分----------------------------------------------------------------------
+//登陆成功后通知侧边栏用户头像和账户名信息改变
+#define NOTI_LOGIN_STATE_CHANGE @"NOTI_LOGIN_STATE_CHANGE"
+//登陆路由器成功后的通知
+#define NOTI_LOGIN_ROUTER_STATE_CHANGE @"NOTI_LOGIN_ROUTER_STATE_CHANGE"
+//获取网速成功后通知UI更新
+#define NOTI_UPDATE_NET_SPEED @"NOTI_UPDATE_NET_SPEED"
+//首页的设备缩略图放大缩小的通知
+#define NOTI_COLLECTIONVIEW_SIZE_CHANGE @"NOTI_COLLECTIONVIEW_SIZE_CHANGE"
+//mac过滤状态的更新通知终端列表
+#define NOTI_REFRESH_DEVICE_LIST @"NOTI_REFRESH_DEVICE_LIST"
+//通知主界面有新的设备加入
+#define NOTI_NEW_DEVICE_INSERT @"NOTI_NEW_DEVICE_INSERT"
+//通知设备名称的修改
+#define NOTI_CHANGE_DEVICE_NICKNAME  @"NOTI_CHANGE_DEVICE_NICKNAME"
+//所有的通知部分结束----------------------------------------------------------------------
+
+
+
+
+
+
+
+//所有的KEY----------------------------------------------------------------------
+//路由器的密码
+#define KEY_OF_ROUTER_PASSWORD @"KEY_OF_ROUTER_PASSWORD"
+//路由器的登陆账号
+#define KEY_OF_ROUTER_ACCOUNT @"KEY_OF_ROUTER_ACCOUNT"
+//无线的密码
+#define KEY_OF_WIFI_PASSWORD @"KEY_OF_WIFI_PASSWORD"
+//登录出错
+#define KEY_LOGIN_ERROR @"error=new Array(\"WAN口无网线连接！\",\"路由器无法访问互联网，请检查您的上网设置。\")"
+//路由器的无线名称
+#define KEY_ROUTER_SSID @"KEY_ROUTER_SSID"
+//是否成功登录的标志位
+#define KEY_OF_ISLOGIN @"KEY_OF_ISLOGIN"
+//当前网络的状态
+#define NET_CONNECT_STATE @"NET_CONNECT_STATE"
+
+//插座相关的key
+//总耗电量
+#define KEY_PLUG_ELECTRICITY @"Electricity"
+//是否锁定 （0=未锁定，1=锁定）
+#define KEY_PLUG_LOCK @"Lock"
+//插座的MAC
+#define KEY_PLUG_MAC @"Mac"
+//插座电源状态（0=关闭电源，1=开启电源）
+#define KEY_PLUG_OPEN @"Open"
+//插座的实时功率
+#define KEY_PLUG_POWER @"Power"
+//插座序列号
+#define KEY_PLUG_SERIAL @"Serial"
+//插座的定时
+#define KEY_PLUG_TIME @"Time"
+//插座的是否启用关闭时间
+#define KEY_PLUG_CloseEnabled @"CloseEnabled"
+//插座的关闭的小时
+#define KEY_PLUG_CloseHours @"CloseHours"
+//插座的关闭的分钟
+#define KEY_PLUG_CloseMinutes @"CloseMinutes"
+//插座的开关的周期，转换为2进制，每一位表示一个星期中对应的那一天
+#define KEY_PLUG_Cycle @"Cycle"
+//插座的序号
+#define KEY_PLUG_ID @"ID"
+//插座是否启用开始时间
+#define KEY_PLUG_OpenEnabled @"OpenEnabled"
+//插座开启的小时
+#define KEY_PLUG_OpenHours @"OpenHours"
+//插座开启的分钟
+#define KEY_PLUG_OpenMinutes @"OpenMinutes"
+//插座备注
+#define KEY_PLUG_Remarks @"Remarks"
+//当前定时是否启用
+#define KEY_PLUG_Use @"Use"
+//插座开关电源关闭
+#define KEY_PLUG_POWER_CLOSE @"0"
+//插座开关电源开启
+#define KEY_PLUG_POWER_OPEN @"1"
+//插座的ip地址
+#define KEY_PLUG_LOCAL_IP @"device_local_ip"
+//广播接收到的ip
+#define KET_REMOTE_DEVICE_IP @"KET_REMOTE_DEVICE_IP"
+//所有的KEY结束----------------------------------------------------------------------
+
+
+
+//是否提示功能不可用
+#define CHECK_STATE if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"checkstate"] boolValue]) { UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"开发中,敬请期待！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil]; [alert show]; return; }
+
+
+//手机与插座通信的端口
+#define PORT_OF_GET_SERVICE_IP 9957
+#endif
